@@ -1,0 +1,32 @@
+@charset "utf-8";
+/**
+   writeen by fastfan 2017.09.01
+   secondery css
+*/
+
+.setrequire{
+	height: 33px;
+    width: 104px;
+}
+
+.nav_barbg {
+    background:#d62829;
+    margin-bottom: 10px;
+}
+.adv_bar{
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.adv_bar .navadvator {
+    background-position: center center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    height: 225px;
+    background-size: cover;
+}
+.maingoodsnav{
+	display: none;
+}
+

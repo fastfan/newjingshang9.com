@@ -1,0 +1,429 @@
+@charset "utf-8";
+.addtofavorite::before {
+    content: url(../icon/favor.png);
+    margin: 0 5px 0 10px;
+    position: relative;
+    top: 2px;
+}
+
+.setindex::before {
+    content: url(../icon/setindex.png);
+    margin: 0 5px 0 15px;
+    position: relative;
+    top: 3px;
+}
+
+.headerpart{
+    margin: 40px auto 30px;
+}
+
+ul.headerpart li{
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btncontainer {
+    margin: 5px 0;
+}
+
+.bussinessinfo {
+    text-align: right;
+}
+
+li.searchpart .searchkind {
+    overflow: hidden;
+}
+
+.searchbar {
+    position: relative;
+}
+
+li.searchpart .kindbtn.on {
+    background: #d62829;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+}
+
+span.kindbtn {
+    float: left;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+
+.searchinput{
+    width: 350px;
+    height: 33px;
+    border: 1px solid #d62829;
+    padding: 0 5px;
+}
+
+.clicktosearch {
+    display: inline-block;
+    width: 34px;
+    background: url(../icon/searchbtn.png) center center no-repeat;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.wantedbtn,.salebtn{
+    padding: 6px 40px 6px 30px;
+    display: inline-block;
+    background: #d62829;
+    color: #fff;
+    border-radius: 3px;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wantedbtn::after, .salebtn::after {
+    content: '＞';
+    position: absolute;
+    right: 12px;
+    font-size: 16px;
+    top: 6px;
+}
+
+.wantedbtn::before, .salebtn::before {
+    content: url(../icon/askforbuy.png);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.wantedbtn::before{
+    content: url(../icon/askforsale.png);
+}
+
+.nav_barbg {
+    background:#d62829;
+    margin-bottom: 10px;
+}
+
+li.nav{
+    display: inline-block;
+    color: #fff;
+    margin: 7px 38px;
+    cursor: pointer;
+}
+
+ul.nav_bar>li.nav:first-child {
+    margin-left: 0;
+}
+
+.newscontainer {
+    width: 585px;
+    /* height: 235px; */
+    display: inline-block;
+    float: left;
+}
+
+.newstitlecontainer {
+    border-bottom: 1px solid #d62829;
+    overflow: hidden;
+}
+
+.newsmaintitle {
+    font-size: 14px;
+    padding: 4px 10px;
+    display: inline-block;
+    border-bottom: 1px solid #d62829;
+    float: left;
+}
+
+span.newsmaintitle.on {
+    color: #fff;
+    background: #d62829;
+}
+
+.newspart {
+    overflow: hidden;
+}
+
+.newstitle{
+    float:left;
+}
+
+.newstime {
+    float: right;
+}
+
+.newsdiv {
+    overflow: hidden;
+    padding: 3px 5px;
+}
+
+.advpart{
+    overflow: hidden;
+    margin: 10px 0 20px;
+}
+
+.newscontent {
+    width: 390px;
+    display: inline-block;
+    height: 225px;
+    float: left;
+}
+
+.newscontent.long {
+    width: 780px;
+    margin-left: 20px;
+}
+
+ul.advpart li.advinleft,ul.advpart li.advinright {
+    width: 470px;
+    height: 300px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    background: #ddd;
+}
+
+ul.advpart li.advinright {
+    width: 710px;
+    margin-right: 0px;
+}
+
+.advin5{
+    width: 230px;
+    height: 100px;
+    background: #ddd;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+}
+
+.advpart>li:last-child {
+    margin-right: 0;
+}
+
+.imgare {
+    width: 260px;
+    height: 190px;
+    background: #ddd;
+    display: inline-block;
+    float: left;
+}
+
+.newsare {
+    display: inline-block;
+    float: left;
+    width: 506px;
+    margin-left: 10px;
+}
+
+.hottitle {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #d62829;
+}
+
+.newswithimg {
+    vertical-align: top;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+a.pagelink:not(:last-child)::after {
+    content: '|';
+    display: inline-block;
+    color: #fff;
+    margin: 0 5px 0 10px;
+}
+
+.goodslistshow_0, .goodslistshow_1,.tradesnewsandrules{
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.goodslistbox {
+    width: 588px;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.goodspart {
+    width: 990px;
+    border: 1px solid #ddd;
+    float: left;
+    margin-right: 20px;
+}
+
+.brandbox {
+    float: left;
+    width: 186px;
+    border: 1px solid #ddd;
+}
+.goodslistbox:first-child{margin-right: 20px;}
+
+.fixedbox {
+    overflow: hidden;
+}
+
+.fixedbox .goodsimg,.fixedbox .midnav,.fixedbox .goodsshowbox {
+    float: left;
+    overflow: hidden;
+}
+
+ul.goodsshowbox {
+    width: 612px;
+}
+
+ul.goodsshowbox>li.onegoodsboxli {
+    width: 204px;
+    height: 155px;
+    display: inline-block;
+    float: left;
+}
+
+ul.goodsshowbox>li.onegoodsboxli:nth-child(-1n+3) {
+    border-bottom: 1px solid #ddd;
+}
+
+.sallbar {
+    overflow: hidden;
+}
+
+span.goodsname,span.goodsprice {
+    display: inline-block;
+    width: 82px;
+    padding: 5px 10px;
+    float: left;
+}
+
+.goodsimg {
+    width: 240px;
+    height: 311px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center center;
+}
+
+.midnav {
+    height: 311px;
+}
+
+.midnavli {
+    width: 118px;
+    padding: 10px 5px 10px 15px;
+}
+
+.logoshowbox {
+    width: 186px;
+    height: 311px;
+}
+
+.logosshow {
+    width: 185px;
+    height:102px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.tradenews,.tradenewsrules {
+    width: 828px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.tradenewsrules {
+    width: 348px;
+    margin-left: 20px;
+    height: 320px;
+}
+
+.goodstabletitlename {
+    padding: 0;
+}
+
+.goodstabletitlename::before {
+    content: attr(floorid);
+    color: #e60012;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.goodstalbe tr>td {
+    text-align: center;
+    height: 35px;
+}
+
+.goodstalbe tr:not(.lastline)>td {
+    border-bottom: 1px dashed #ddd;
+}
+
+.trhead>td:not(:first-child) {
+    background-color: #ddd;
+}
+
+td.tableimgbox {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 178px;
+    border-bottom: none !important;
+}
+
+tr.tablehead>td {
+    background-color: #ededed;
+}
+
+img.goodsimage{
+    display: block;
+}
+
+.newsbody{
+    overflow: hidden;
+    padding: 10px;
+}
+
+.newsimage{
+    width: 170px;
+    height: 118px;
+    float: left;
+}
+.newscontentpart{
+    float: left;
+    margin-left: 20px;
+    width: 618px;
+}
+
+.newstitlejs {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.newscontentjs {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.rulesimage{
+    float: left;
+    margin: 0 15px;
+    width: 118px;
+    height: 118px;
+}
+.rulseinfo{
+    float: left;
+    margin-right: 15px;
+    width: 185px;
+    line-height: 20px;
+}
+
+.goodsname {
+    font-size: 14px;
+    padding: 5px 0;
+    display: block;
+}
+
+.rulesbody{
+    display:block;
+    float: left;
+    padding: 10px 0;
+}

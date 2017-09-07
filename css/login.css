@@ -1,0 +1,216 @@
+@charset "utf-8";
+/*login登录注册*/
+.loginpagehead{
+    padding:40px 0;
+    overflow: hidden;
+}
+
+.loginlogo {
+    float: left;
+}
+
+.logintellinfo {
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a.loginsoon {
+    color: #177ae6;
+}
+.loginpagebody{
+    padding: 100px 110px;
+}
+
+.loginwindow{
+    border: 1px solid #ddd;
+    height: 368px;
+    position: relative;
+    z-index: 10;
+}
+.windowleft{
+    width: 564px;
+    height: 368px;
+    float: left;
+    background: url("../images/loginadv.jpg") no-repeat center center;
+}
+.windowright{
+    width: 314px;
+    border-left: 1px solid #ddd;
+    margin-left: -1px;
+    float: left;
+    height: 308px;
+    padding: 30px 50px;
+}
+.windowtitle{
+    padding: 5px 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.useriddiv,.psddiv{
+    height: 42px;
+    border: 1px solid #ddd;
+    background: url("../icon/userid_icon.png") 0 0 no-repeat;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.psddiv{
+    background: url("../icon/passwd_icon.png") 0 0 no-repeat;
+    margin-bottom: 10px;
+}
+
+.autoselect {
+    overflow: hidden;
+    margin-bottom: 75px;
+}
+
+.autologin {
+    float: left;
+}
+
+.regandforget {
+    float: right;
+}
+
+.login_in {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: #ff0036;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+
+.logininput {
+    float: right;
+    width: 260px;
+    font-size: 14px;
+    padding: 12px 0;
+    border: none;
+    outline: none;
+}
+
+.loginpagefoot{
+    text-align: center;
+    padding: 20px 0 90px;
+    border-top: 3px solid #ff0036;
+}
+
+.footer_infomation {
+    margin-bottom: 10px;
+}
+
+a.login_footerlink {
+    color: #333;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.footer_infomation>a.login_footerlink:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: -3px;
+    color: #666 !important;
+}
+
+span.lengrageowner {
+    display: inline-block;
+}
+
+.regpagebody{
+    background: #f2f2f2;
+    padding: 20px 0;
+}
+
+.userinfowriteborder {
+    background: #fff;
+    color: #333;
+}
+
+.tabuser {
+    padding: 15px 0;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.writinghandle {
+    margin: 15px 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+.writinghandle>li {
+    width: 300px;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 38px;
+    vertical-align: middle;
+}
+
+.writing_input {
+    width: 240px;
+    padding: 6px 25px 6px 0;
+}
+
+.getkeyword {
+    background: #d4e8ff;
+    color: #177ae6;
+    border: 1px solid #177ae6;
+    padding: 7px 5px;
+    margin-left: 4px;
+}
+
+li.writinglabel {
+    text-align: right;
+}
+
+li.writinglabel,li.writedwrong {
+    position: relative;
+    top: 8px;
+}
+
+li.writedwrong {
+    color: #ee4133;
+}
+
+li.writinglabel::before {
+    content: '*';
+    position: relative;
+    top: 2px;
+    left: -2px;
+    color: #ee4133;
+}
+
+.tabuser h3 {
+    text-align: center;
+    width: 50%;
+    float: left;
+    font-weight: 400;
+}
+
+.tabuser h3:hover{
+    color: #ee4133;
+}
+
+.userneedtokonw {
+    color: #ee4133;
+}
+
+.clicktoreg {
+    width: 270px;
+    text-align: center;
+    background: #e60012;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.clicktoregdiv {
+    margin: 165px 0 0 300px;
+    padding-bottom: 165px;
+}
