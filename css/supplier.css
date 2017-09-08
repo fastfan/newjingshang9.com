@@ -3,12 +3,29 @@
    writeen by fastfan 2017.09.01
    secondery css
 */
-
-.setrequire{
-	height: 33px;
-    width: 104px;
+/*header*/
+.header,.footbar{
+	background-color: #fff;
+	overflow: hidden;
 }
-
+.maingoodsnav{
+	display: none;
+}
+.setrequire{
+	height: 35px;
+    width: 106px;
+    float: right;
+    margin-top: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #434343;
+    outline: none;
+    border: 1px solid #eee;
+}
+/*main*/
+.main{
+	
+}
 .nav_barbg {
     background:#d62829;
     margin-bottom: 10px;
@@ -17,7 +34,7 @@
     height: 225px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-bottom: 31px;
 }
 .adv_bar .navadvator {
     background-position: center center;
@@ -26,7 +43,70 @@
     height: 225px;
     background-size: cover;
 }
-.maingoodsnav{
-	display: none;
+.supplier_sidebar{
+	width: 200px;
+	float: left;
+	background-color: #fff;
+	font-size: 14px;
+	margin-right: 20px;
+	color: #333;
 }
-
+.supplier_side{
+	width: 980px;
+	float: left;
+	background-color: #fff;
+	font-size: 14px;
+	color: #333;
+}
+.supplier_sidebar>h5{
+	color: #fff;
+	background-color: #6f97f3;
+	line-height: 45px;
+	text-align: center;
+}
+.sidebar_list>li{
+	margin-bottom: 31px;
+	text-align: left;
+	line-height: 14px;
+}
+.sidebar_list>li:first-child{
+	margin-top: 16px;
+}
+.sidebar_list>li:last-child{
+	margin-bottom: 15px;
+}
+.sidebar_list>li::before{
+	content: url(../icon/item_icon.png);
+    margin: 0 10px 0 55px;
+    vertical-align: middle;
+}
+.supplier_side>h3{
+	color: #333;
+	font-size: 18px;
+	line-height: 44px;
+	padding-left: 21px;
+	border-bottom: 1px solid #f6f6f6;
+}
+.supplier_sidelist{
+	overflow: hidden;
+	padding-top: 26px;
+	padding-bottom: 35px;
+	border-bottom: 1px solid #efefef;
+}
+.supplier_sidelist>li{
+	width: 30%;
+	float: left;
+	margin-bottom: 28px;
+	line-height: 14px;
+}
+.supplier_sidelist>li::before{
+	content: url(../icon/set_icon2.png);
+    margin: 0 9px 0 43px;
+}
+.supplier_page{
+	height: 64px;
+	background-color: tomato;
+}
+.footerlinks>li:first-child{
+	margin-top: 28px;
+}
