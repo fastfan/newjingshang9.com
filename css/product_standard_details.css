@@ -31,16 +31,16 @@
     margin-bottom: 10px;
 }
 .adv_bar{
-    height: 225px;
+    height: 260px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 31px;
+    margin-bottom: 0px;
 }
 .adv_bar .navadvator {
     background-position: center center;
     background-color: #fff;
     background-repeat: no-repeat;
-    height: 225px;
+    height: 260px;
     background-size: cover;
 }
 .footerlinks>li:first-child{
@@ -49,7 +49,7 @@
 .standards_l{
 	overflow: hidden;
 	background-color: #fff;
-	width: 840px;
+	width: 885px;
 }
 .standards_l_title{
 	overflow: hidden;
@@ -60,29 +60,18 @@
 }
 .standards_l_list>li{
 	float: left;
-	font-weight: bold;
-	font-size: 16px;
-	color: #333;
+	font-size: 12px;
+	color: #666;
 	line-height: 46px;
-}
-.standards_l_list>li:first-child{
-	margin-left: 15px;
+	font-weight: normal;
 }
 .standards_l_list>li:not(:last-child)::after{
 	content: ">";
 	margin-right:10px ;
 }
-.online_search{
-	
-}
-.online_search>a{
-	font-size: 16px;
-	color: #434343;
-	line-height: 46px;
-	margin-right: 16px;
-}
+
 .inner_sixtitle{
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bolder;
 	color: #333;
 	text-align: center;
@@ -91,13 +80,12 @@
 .inner_siximg{
 	clear: both;
 	font-size: 16px;
-	color: #434343;
-	font-weight: bold;
+	color: #333;
 	margin-bottom: 15px;
-	margin-left: 35px;
+	margin-left: 15px;
 }
 .standards_l_listimg{
-	width: 764px;
+	width: 853px;
 	line-height: 264px;
 	text-align: center;
 	margin: auto;
@@ -105,32 +93,17 @@
 	overflow: hidden;
 	margin-bottom: 20px;
 }
-.standards_l_listimg>li{
-	float: left;
-	text-align: center;
-	width: 30%;
-	margin-right: 4.8%;
-	border-right: 1px solid #efefef;
-}
-.standards_l_listimg>li:last-child{
-	margin-right: 0;
-	border-right:0;
-}
-.add_line{
-	background-color: #efefef;
-	height: 1px;
-}
+
 .standard_details_tb{
-	width: 766px;
+	width: 853px;
 	margin: auto;
 	border:1px solid #efefef;
 	border-color: #efefef;
-	margin-bottom: 16px;
+	margin-bottom: 34px;
 }
 .standard_details_tb>caption{
 	font-size: 16px;
-	color: #434343;
-	font-weight: bold;
+	color: #333;
 	text-align: left;
 	line-height: 44px;
 }
@@ -141,20 +114,19 @@
 	color: #434343;
 }
 .standard_details_profile{
-	 text-align: right;
-    margin-right: 38px;
+	text-align: right;
+    margin-right: 15px;
     line-height: 44px;
     font-size: 14px;
 }
 
 .supplier_r{
-	width: 340px;
+	width: 295px;
 	overflow: hidden;
 }
 .product_rcd{
 	overflow: hidden;
 	background-color: #fff;
-	margin-bottom: 11px;
 }
 .rcd_list{
 	border-bottom:1px solid #efefef ;
@@ -178,19 +150,30 @@
 .rcd_img{
 	line-height: 197px;
 	text-align: center;
-	border-bottom:1px solid #efefef ;
 }
 .rcd_text{
 	line-height: 46px;
 	font-size: 16px;
 	color: #434343;
+	width: 265px;
+    border-bottom: 1px solid #efefef;
+    margin: auto;
 }
-.rcd_name{
-	margin-left: 15px;
+.rcd_text2{
+	border-bottom: none;
 }
 .rcd_price{
 	float: right;
 	color: #E60012;
-	margin-right: 15px;
 }
 
+textarea.standard_details_textare {
+	width: 843px;
+    height: 203px;
+    margin: auto;
+    border-color: #efefef;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+}

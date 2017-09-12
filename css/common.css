@@ -417,7 +417,13 @@ textarea.text:disabled:hover {
 
 .searchbarUl {
     margin: 30px auto;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+ul.searchbarUl::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .searchbarUl>li {
@@ -432,13 +438,25 @@ textarea.text:disabled:hover {
     height: 30px;
     border: 3px solid #e60012;
     margin-top: 12px;
+    position: relative;
 }
 
-.needtobuy {background: #fff;border: 1px solid #bfbfbf;height: 35px;width: 80px;float: right;margin-top: 12px;}
+.needtobuy {background: #f6f6f6;border: 1px solid #bfbfbf;height: 35px;width: 80px;float: left;margin-top: 12px;margin-left: 20px;}
+
+.tellus {
+    float: left;
+    display: inline-block;
+    margin: 15px 0 0 30px;
+    padding: 6px 25px;
+    background: #fff url("../icon/tel.png") no-repeat 3px 7px;
+}
 
 .searchkindselector {
     position: absolute;
-    width: 66px;
+    width: 70px;
+    margin-left: -3px;
+    margin-top: 1px;
+    background: #fff;
 }
 
 ul.searchkindselector>li {
@@ -450,8 +468,11 @@ ul.searchkindselector>li {
 
 ul.searchkindselector>li:first-child {
     border-right: 1px solid #bfbfbf;
+    border-left: 3px solid #e60012;
 }
-
+.jsnav{
+	cursor: pointer;
+}
 .search_input {
     border: none;
     outline: none;
@@ -476,13 +497,13 @@ ul.searchkindselector>li:first-child::after {
 }
 
 ul.searchkindselector>li:not(:first-child) {
-    border: 1px solid #bfbfbf;
+    border: 3px solid #e60012;
     border-top: none;
     border-bottom: none;
 }
 
 ul.searchkindselector>li:last-child {
-    border-bottom: 1px solid #bfbfbf;
+    border-bottom: 3px solid #e60012;
 }
 
 .loginleft {
@@ -570,7 +591,7 @@ a.login_a {
     position: relative;
 }
 
-a.jsnavlink:hover::after {
+/*a.jsnavlink:hover::after {
     content: '';
     display: inline-block;
     border-bottom: 2px solid red;
@@ -578,7 +599,7 @@ a.jsnavlink:hover::after {
     position: absolute;
     bottom: -12px;
     left: 0;
-}
+}*/
 
 
 li.jsnav.mainnavbar {
@@ -594,7 +615,7 @@ li.jsnav.mainnavbar {
     position: absolute;
     height: 300px;
     width: 100%;
-    top: 43px;
+    top: 45px;
     background: rgba(255,255,255,.9);
 }
 

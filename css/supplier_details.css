@@ -31,16 +31,16 @@
     margin-bottom: 10px;
 }
 .adv_bar{
-    height: 225px;
+    height: 260px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 31px;
+    margin-bottom: 0px;
 }
 .adv_bar .navadvator {
     background-position: center center;
     background-color: #fff;
     background-repeat: no-repeat;
-    height: 225px;
+    height: 260px;
     background-size: cover;
 }
 .footerlinks>li:first-child{
@@ -49,28 +49,20 @@
 
 /*supplier_details*/
 .supplier_l{
-	width: 840px;
+	width: 885px;
 	margin-bottom: 30px;
 }
 .supplier_nav{
 	line-height: 46px;
 	color: #333;
-	font-weight: bold;
-	font-size: 16px;
-	border-bottom: 1px solid #f6f6f6;
+	font-size: 14px;
 	overflow: hidden;
 }
 .supplier_nav>li{
 	float: left;
 }
-.supplier_nav>li:first-child{
-	margin-left: 15px;
-}
-.supplier_nav>li:last-child{
-	float: right;
-	margin-right: 15px;
-	font-weight: normal;
-}
+
+
 .supplier_nav>li.supplier_navlist::after{
 	content: '>';
 	margin-right: 9px;
@@ -84,11 +76,22 @@
 }
 .supplier_l_list>h3{
 	clear: both;
-	font-size: 18px;
+	font-size: 24px;
 	text-align: center;
+	color: #111;
+	font-weight: normal;
+	line-height: 18px;
+    padding-top: 30px;
+}
+.online_search2{
+	float: right;
+	margin-right: 81px;
+	line-height: 16px;
+    margin-bottom: 15px;
+}
+.online_search2>a{
+	font-size: 16px;
 	color: #434343;
-	margin-top: 16px;
-	margin-bottom: 21px;
 }
 .supplier_tab>caption{
 	font-size: 16px;
@@ -98,7 +101,8 @@
 	margin-bottom: 15px;
 }
 .supplier_tab{
-	width: 768px;
+	clear: both;
+	width: 840px;
 	border: 1px solid #ece3f1;
 	font-size: 14px;
 	color: #434343;
@@ -107,16 +111,20 @@
 .supplier_tab tr td{
 	border: 1px solid #ece3f1;
 	line-height: 42px;
-	padding-left: 9px;
+	width: 214px;
 }
 .supplier_tab tbody tr td:first-child,.supplier_tab tbody tr td:nth-child(3){
 	background-color: #f0f6f9;
+	width: 137px;
+	padding-left: 9px;
+}
+.supplier_tab tbody tr td:nth-child(2),.supplier_tab tbody tr td:nth-child(4){
+	padding-left: 20px;
 }
 .supplier_tab tfoot tr td{
 	text-align: center;
 }
 .supplier_l_arc{
-	margin-top: 32px;
 	background-color: #fff;
 	padding-top: 13px;
 	padding-bottom: 9px;
@@ -125,9 +133,8 @@
 	color: #434343;
 	font-size: 16px;
 	line-height: 18px;	
-	padding-left: 12px;
-	border-left: 3px solid #e60012;
-	margin-bottom: 30px;
+	padding-left: 20px;
+	margin-bottom: 19px;
 }
 .supplier_l_arc>p{
 	font-size: 14px;
@@ -137,7 +144,7 @@
 	padding: 0 15px;
 }
 .supplier_r{
-	width: 340px;
+	width: 295px;
 	overflow: hidden;
 }
 .product_rcd{
@@ -166,11 +173,10 @@
 .rcd_img{
 	line-height: 192px;
 	text-align: center;
-	border-bottom:1px solid #efefef ;
 }
 .rcd_text{
 	line-height: 46px;
-	font-size: 16px;
+	font-size: 14px;
 	color: #434343;
 }
 .rcd_name{
@@ -183,43 +189,46 @@
 }
 
 .product_rcd2{
-	margin: 8px 0 30px 0;
+	margin: 0px 0 20px 0;
 }
 .reletive_cpy{
 	background-color: #fff;
-	padding-bottom: 68px;
+}
+.cpy_bigtitle{
+	overflow: hidden;
+	border-bottom: 1px solid #efefef;
 }
 .cpy_title{
-	font-size: 18px;
-	line-height: 48px;
+	font-size: 14px;
 	color: #434343;
-	text-align: center;
-    border-bottom: 1px solid #efefef;
+	border-left: 3px solid #E60012;
+    margin: 16px 0 14px 15px;
+    padding-left: 10px;
+    float: left;
+}
+.cpy_list{
+	clear: both;
 }
 .cpy_list>li{
 	font-size: 16px;
-	margin-bottom: 15px;
-	line-height: 16px;
+	line-height: 46px;
+	border-bottom: 1px solid #efefef;
 }
-.cpy_list>li:first-child{
-	margin-top: 15px;
-}
+
 .cpy_list>li::before{
-	content: url(../icon/listimg.png);
+	content: url(../icon/set_icon2.png);
     margin: 0 9px 0 15px;
 }
 .supplier_bottom{
 	clear: both;
 	background-color: #fff;
 	position: relative;
-	margin-bottom: 30px;
 }
 .supplier_bottom>h4{
 	line-height: 46px;
 	font-size: 16px;
 	color: #434343;
-	padding-left: 34px;
-	border-bottom: 1px solid #f6f6f6;
+	margin-left: 15px;
 	margin-bottom: 15px;
 }
 .cpy_imglist{
@@ -229,23 +238,23 @@
 	overflow: hidden;
 }
 .cpy_imglist>li{
-	width: 200px;
-	height: 200px;
+	width: 252px;
+	height: 275px;
 	background-color: #f9f9f9;
 	border-radius: 2px;
 	float: left;
-	margin-right: 32px;
+	margin-right: 15px;
 }
 .cpy_imglist>li:first-child{
 	margin-left: 50px;
 }
 .arrow_l{
 	position: absolute;
-	top: 154px;
+	top: 50%;
     left: 15px;
 }
 .arrow_r{
 	position: absolute;
-	top: 154px;
-    right: 214px;
+	top:50%;
+    right: 15px;
 }

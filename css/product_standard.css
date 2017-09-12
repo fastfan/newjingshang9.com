@@ -31,7 +31,7 @@
     margin-bottom: 10px;
 }
 .adv_bar{
-    height: 225px;
+    height: 260px;
     position: relative;
     overflow: hidden;
     margin-bottom: 31px;
@@ -40,7 +40,7 @@
     background-position: center center;
     background-color: #fff;
     background-repeat: no-repeat;
-    height: 225px;
+    height: 260px;
     background-size: cover;
 }
 .footerlinks>li:first-child{
@@ -49,15 +49,16 @@
 
 /*selectlist_title*/
 .selectlist_title{
-	line-height: 46px;
 	font-size: 18px;
 	font-weight: bold;
-	padding-left: 16px;
+	padding-left: 10px;
+	color: #333;
+	margin-left: 16px;
+    border-left: 3px solid #e60012;
+    margin-bottom: 16px;
 }
 .standard_select{
 	overflow: hidden;
-	border-bottom: 1px solid #f6f6f6;
-	background-color: #fff;
 }
 .selectlist_data{
 	line-height: 46px;
@@ -82,22 +83,18 @@
 	margin-right: 14px;
 }
 
-.standard_select>.selectlist_data>.selected{
-	background-color: #6f97f3;
-	color: #fff;
-}
 .select_classify,.select_standard{
 	overflow: hidden;
 	background-color: #fff;
 	color: #333;
-	font-size: 16px;
+	font-size: 14px;
 	border-bottom: 1px solid #f6f6f6;
 }
 .classify_title,.standard_title{
-	font-weight: bold;
 	padding-left: 16px;
 	line-height: 46px;
-	margin-right: 38px;
+	margin-right: 22px;
+	color: #666;
 }
 .classifylist,.standardlist{
 	overflow: hidden;
@@ -105,74 +102,99 @@
 }
 .classifylist>li,.standardlist>li{
 	float: left;
-	padding-right: 30px;
+	margin-right: 35px;
 }
 .classify_infolist{
 	background-color: #fff;
 	overflow: hidden;
-	width: 660px;
+	width: 703px;
+	height: 148px;
 }
 .infolist_title{
-	font-size: 18px;
-	color: #333;
-	font-weight: bold;
-	border-bottom: 1px solid #f6f6f6;
-	line-height: 46px;
+	font-size: 16px;
+	color: #111;
+	border-bottom: 1px dashed #eee;
+	line-height: 40px;
 	padding-left: 15px;
 }
 .infolist_artical,.infolist_artical2,.infolist_artical3{
 	overflow: hidden;
-	border-bottom: 1px solid #f6f6f6;
+	border-bottom: 1px dashed #eee;
 }
 
 .infolist_artical>li,.infolist_artical2>li,.infolist_artical3>li{
 	float: left;
+	margin-right: 20px;
 }
 .infolist_artical2,.infolist_artical,.infolist_artical3{
-	font-size: 16px;
-	line-height: 46px;
+	font-size: 14px;
+	line-height: 36px;
 	color: #333;
 	padding-left: 15px;
+}
+.infolist_artical2>li:first-child,.infolist_artical>li:first-child,.infolist_artical3>li:first-child{
+	font-size: 14px;
+	color: #666;
+	width: 114px;
 }
 .classify_infoimg{
 	border-right: 1px solid #F6F6F6;
 }
-.infolist_artical2{
-	border: none;
-}
+
 .infolist_artical3{
 	border: none;
 	line-height: 34px;
 }
 .classify_info{
-	width: 923px;
+	width: 885px;
 	overflow: hidden;
 	margin-bottom: 10px;
 }
-.product_recommend{
-	margin-top: 32px;
+
+
+.supplier_r{
+	width: 295px;
+	overflow: hidden;
+}
+.product_rcd{
+	overflow: hidden;
 	background-color: #fff;
-	padding: 10px;
-	font-size: 16px;
 }
-.product_recommend_title{
-	font-size: 18px;
+.rcd_list{
+	border-bottom:1px solid #efefef ;
+	overflow: hidden;
+}
+.rcd_list>h4{
+	font-size: 14px;
+	color: #434343;
+	border-left: 3px solid #E60012;
+    margin-left: 15px;
+    margin-top: 12px;
+	padding-left: 10px;	
+	float: left;
+}
+.rcd_list>a{
+	float: right;
+	font-size: 14px;
+	line-height: 44px;
+	margin-right: 15px;
+}
+.rcd_img{
+	line-height: 197px;
+	text-align: center;
+}
+.rcd_text{
 	line-height: 46px;
-	color: #333;
-	border-bottom: 1px solid #F6F6F6;
-	font-weight: bold;
+	font-size: 16px;
+	color: #434343;
+	width: 265px;
+    border-bottom: 1px solid #efefef;
+    margin: auto;
 }
-.product_img{
-	margin-top: 10px;
-	margin-bottom: 15px;
+.rcd_text2{
+	border-bottom: none;
 }
-.product_details{
-	
-}
-.product_details_name{
-	
-}
-.product_details_price{
+.rcd_price{
 	float: right;
 	color: #E60012;
 }

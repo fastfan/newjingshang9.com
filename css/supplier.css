@@ -31,7 +31,7 @@
     margin-bottom: 10px;
 }
 .adv_bar{
-    height: 225px;
+    height: 260px;
     position: relative;
     overflow: hidden;
     margin-bottom: 31px;
@@ -40,7 +40,7 @@
     background-position: center center;
     background-color: #fff;
     background-repeat: no-repeat;
-    height: 225px;
+    height: 260px;
     background-size: cover;
 }
 .supplier_sidebar{
@@ -54,13 +54,12 @@
 .supplier_side{
 	width: 980px;
 	float: left;
-	background-color: #fff;
 	font-size: 14px;
 	color: #333;
 }
 .supplier_sidebar>h5{
 	color: #fff;
-	background-color: #6f97f3;
+	background-color: #E60012;
 	line-height: 45px;
 	text-align: center;
 }
@@ -82,19 +81,20 @@
 }
 .supplier_side>h3{
 	color: #333;
-	font-size: 18px;
-	line-height: 44px;
-	padding-left: 21px;
-	border-bottom: 1px solid #f6f6f6;
+    font-size: 18px;
+    padding-left: 5px;
+    border-left: 3px solid #e60012;
+    margin: 14px 0px 14px 16px;
 }
 .supplier_sidelist{
 	overflow: hidden;
 	padding-top: 26px;
 	padding-bottom: 35px;
 	border-bottom: 1px solid #efefef;
+	background-color: #fff;
 }
 .supplier_sidelist>li{
-	width: 30%;
+	width: 50%;
 	float: left;
 	margin-bottom: 28px;
 	line-height: 14px;
@@ -104,7 +104,7 @@
     margin: 0 9px 0 43px;
 }
 .supplier_page{
-	height: 64px;
+	height: 56px;
 	background-color: tomato;
 }
 .footerlinks>li:first-child{

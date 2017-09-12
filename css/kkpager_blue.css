@@ -1,8 +1,8 @@
 #kkpager{
 	clear:both;
-	color:#999;
+	color:#666;
 	padding:5px 0px 5px 0px;
-	font-size:13px;
+	font-size:12px;
 	display: flex;
 }
 #kkpager>div:first-child{
@@ -32,7 +32,7 @@
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border:1px solid #DFDFDF;
-	background-color:#F5F5F5;
+	background-color:#e6e6e6;
 	color:#aaa;
 }
 #kkpager span.curr{
@@ -115,4 +115,5 @@
 
 #kkpager .infoTextAndGoPageBtnWrap{
 	padding-top:0px;
+	display: none;
 }
