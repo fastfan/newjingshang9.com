@@ -4,10 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>产品标准</title>
+		<link href="../css/common.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../css/product_standard.css" type="text/css">
+	    <link rel="stylesheet" type="text/css" href="../css/kkpager_blue.css"/>
+	    <script src="../js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="../js/kkpager.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
-	<link href="../css/common.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="../css/product_standard.css" type="text/css">
-
+	
 	<body style="background-color: #f6f6f6;">
 		<div class="header">
 			<div class="loginline">
@@ -291,7 +294,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="classify_info">
+					<div class="classify_info classify_info2">
 						<div class="classify_infoimg left">
 							<img src="../images/tableimg2.png" />
 						</div>
@@ -338,6 +341,19 @@
 							</ul>
 						</div>
 					</div>
+					<div id="kkpager"></div>
+					<script type="text/javascript">
+						//生成分页控件  
+						kkpager.generPageHtml({
+						    pno : '${p.pageNo}',
+						    mode : 'click', //可选，默认就是link
+						    //总页码  
+	//					    total : '${p.totalPage}',
+						    total : 10, 
+						    //总数据条数  
+						    totalRecords : '${p.totalCount}'
+						});
+					</script>
 				</div>
 				<div class="right" style="width: 295px;margin-top: 32px;">
 					<div class="product_rcd">
