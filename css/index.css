@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 .addtofavorite::before {
     content: url(../icon/favor.png);
     margin: 0 5px 0 10px;
@@ -235,27 +235,30 @@ a.pagelink:not(:last-child)::after {
 }
 
 .goodslistshow_0, .goodslistshow_1,.tradesnewsandrules{
-    margin: 30px auto;
+    margin: 0 auto 30px;
     overflow: hidden;
 }
 
 .goodslistbox {
     width: 588px;
-    border: 1px solid #ddd;
+    border: 1px solid #f6f6f6;
     float: left;
+    background: #fff;
 }
 
 .goodspart {
     width: 990px;
-    border: 1px solid #ddd;
+    border: 1px solid #f6f6f6;
     float: left;
     margin-right: 20px;
+    background: #fff;
 }
 
 .brandbox {
     float: left;
     width: 186px;
-    border: 1px solid #ddd;
+    border: 1px solid #f6f6f6;
+    background: #fff;
 }
 .goodslistbox:first-child{margin-right: 20px;}
 
@@ -268,73 +271,91 @@ a.pagelink:not(:last-child)::after {
     overflow: hidden;
 }
 
+ul.midnav {
+    border-right: 1px solid #f6f6f6;
+    position: relative;
+    z-index: 9;
+    margin-right: -1px;
+    height: 344px;
+}
+
 ul.goodsshowbox {
-    width: 612px;
+    width: 614px;
 }
 
 ul.goodsshowbox>li.onegoodsboxli {
     width: 204px;
-    height: 155px;
+    height: 171px;
     display: inline-block;
     float: left;
-}
-
-ul.goodsshowbox>li.onegoodsboxli:nth-child(-1n+3) {
-    border-bottom: 1px solid #ddd;
-}
-
-.sallbar {
     overflow: hidden;
 }
 
+li.onegoodsboxli:not(:nth-child(3n+0)) {
+    border-right: 1px solid #f6f6f6;
+}
+
+ul.goodsshowbox>li.onegoodsboxli:nth-child(-1n+3) {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.sallbar {
+    padding-top: 8px;
+}
+
 span.goodsname,span.goodsprice {
-    display: inline-block;
-    width: 82px;
-    padding: 5px 10px;
-    float: left;
+    display: block;
+    padding: 2px 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+span.goodsprice {
+    color: #e60012;
 }
 
 .goodsimg {
     width: 240px;
-    height: 311px;
+    height: 344px;
     background-repeat: no-repeat;
     background-color: #fff;
     background-position: center center;
 }
 
-.midnav {
-    height: 311px;
-}
-
 .midnavli {
-    width: 118px;
+    width: 116px;
     padding: 10px 5px 10px 15px;
 }
 
 .logoshowbox {
     width: 186px;
-    height: 311px;
 }
 
 .logosshow {
     width: 185px;
-    height:102px;
+    height: 114px;
     background-position: center center;
     background-repeat: no-repeat;
     background-color: #fff;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.logoshowbox>.logosshow:last-child {
+    border-bottom: none;
 }
 
 .tradenews,.tradenewsrules {
-    width: 828px;
+    width: 858px;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 1px solid #f6f6f6;
     float: left;
+    background: #fff;
 }
 
 .tradenewsrules {
-    width: 348px;
+    width: 318px;
     margin-left: 20px;
-    height: 320px;
+    /* height: 322px; */
 }
 
 .goodstabletitlename {
@@ -353,12 +374,26 @@ span.goodsname,span.goodsprice {
     height: 35px;
 }
 
+.goodstalbe tr:hover>td {
+    color: #e60012;
+}
+
+tr.lastline>td:nth-child(2) {
+    color: #e60012;
+    border-right: 1px solid #f6f6f6;
+}
+
 .goodstalbe tr:not(.lastline)>td {
-    border-bottom: 1px dashed #ddd;
+    border-bottom: 1px dashed #f6f6f6;
+}
+
+td.tableimgbox {
+    border-right: 1px solid #f6f6f6;
 }
 
 .trhead>td:not(:first-child) {
-    background-color: #ddd;
+    background-color: #f6f6f6;
+    color: #666;
 }
 
 td.tableimgbox {
@@ -374,11 +409,18 @@ tr.tablehead>td {
 
 img.goodsimage{
     display: block;
+    max-width: 204px;
+    max-height: 109px;
 }
 
 .newsbody{
     overflow: hidden;
     padding: 10px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.newsbody:last-child {
+    border-bottom: none;
 }
 
 .newsimage{
@@ -389,13 +431,14 @@ img.goodsimage{
 .newscontentpart{
     float: left;
     margin-left: 20px;
-    width: 618px;
+    width: 648px;
 }
 
 .newstitlejs {
     font-size: 16px;
     color: #333;
     margin: 10px 0;
+    font-weight: 600;
 }
 
 .newscontentjs {
@@ -412,8 +455,9 @@ img.goodsimage{
 .rulseinfo{
     float: left;
     margin-right: 15px;
-    width: 185px;
+    width: 155px;
     line-height: 20px;
+    font-size: 14px;
 }
 
 .goodsname {
@@ -426,6 +470,11 @@ img.goodsimage{
     display:block;
     float: left;
     padding: 10px 0;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+li.rulesbody:last-child {
+    border-bottom: none;
 }
 
 /*悬浮窗*/
@@ -456,6 +505,32 @@ img.goodsimage{
 
 #talkbox button {
     background: #fff;
-    padding: 5px;
+    padding: 6px 10px;
     border: 1px solid #bfbfbf;
+}
+
+#floorbar{
+    position:absolute;
+    top: 525px;
+    left:50%;
+    margin-left: -650px;
+}
+
+#floorbar>li {
+    width: 24px;
+    display: block;
+    padding: 6px 10px;
+    background: #fff;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+#floorbar>li:first-child {
+    background: #e60012;
+    color: #fff;
+}
+
+#floorbar>li:last-child {
+    background: #f7e0e1;
+    color: #e60012;
 }

@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>注册登录</title>
-    <link href="css/common.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/login.css" type="text/css">
 </head>
-<body>
+<body style="height: 1080px;position: relative;">
 <div class="container">
     <div class="loginpagehead">
-        <div class="loginlogo"><img src="images/logo-jinshang9.png"></div>
-        <div class="logintellinfo">已有账号，可<a class="loginsoon">直接登录</a> </div>
+        <div class="loginlogo"><img src="../images/logo-jinshang9.png"></div>
+        <!--<div class="logintellinfo">已有账号，可<a class="loginsoon">直接登录</a> </div>-->
     </div>
 </div>
 
 <div class="newlogbg">
     <div class="container" style="position: relative;height:100%;">
         <div class="windowright">
-            <div class="windowtitle">密码登录</div>
+            <div class="windowtitle">会员登录</div>
             <div class="useriddiv">
                 <input type="text" class="logininput" id="useridinput" placeholder="手机号/邮箱/用户名">
             </div>
             <div class="psddiv">
                 <input type="password" class="logininput" id="pwdinput" placeholder="请输入密码">
+            </div>
+            <div class="loginbtn">
+                <btn class="login_in">登录</btn>
             </div>
             <div class="autoselect">
                 <div class="autologin">
@@ -31,12 +34,12 @@
                         <span>自动登录</span>
                     </label>
                 </div>
-                <a class="regandforget">忘记密码</a>
+                <a class="right">忘记密码</a>
             </div>
-            <div class="loginbtn">
-                <btn class="login_in">登录</btn>
+            <div class="regbtndiv">
                 <a class="regandforget">免费注册</a>
             </div>
+
         </div>
     </div>
 </div>
@@ -67,7 +70,7 @@
         </div>
     </div>
 </div>-->
-<div class="loginpagefoot">
+<!--<div class="loginpagefoot">
     <div class="container">
         <div class="footer_infomation">
             <span class="lengrageowner">2010-2017 1688.com 版权所有</span>
@@ -103,11 +106,11 @@
             <a class="login_footerlink">Lazada</a>
         </div>
     </div>
-</div>
+</div>-->
 
-<div class="footer">
+<div class="footer" style="position: absolute;width: 100%;bottom: 0;">
     <div class="comaneyinfos">
-        2017紧商科技股份有限公司 浙ICP备16009097号，增值电信业务经营许可证：浙B2-20160606  <a class="footlink">联系我们</a><a class="footlink">网站地图</a>
+        2017紧商科技股份有限公司 浙ICP备16009097号，增值电信业务经营许可证：浙B2-20160606 <!-- <a class="footlink">联系我们</a><a class="footlink">网站地图</a>-->
     </div>
 </div>
 </body>
