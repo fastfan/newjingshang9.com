@@ -149,6 +149,7 @@
 	width: 885px;
 	overflow: hidden;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 .classify_info2{
 	margin-bottom: 50px;

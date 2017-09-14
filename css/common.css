@@ -1,8 +1,12 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* ---------- Reset ---------- */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, select, button, th, td, p, hr, blockquote, pre, code {
     padding: 0;
     margin: 0;
+}
+
+.footbar {
+    background: #fff;
 }
 
 html{-webkit-text-size-adjust:none;}
@@ -165,6 +169,7 @@ del {
 .clearfix:before, .clearfix:after {
     display: table;
     content: "";
+    width: 100%;
 }
 
 .clearfix:after {
@@ -411,8 +416,12 @@ textarea.text:disabled:hover {
     clear: both;
 }
 .loginline{
-    background-color: rgb(242, 242, 242);
+    background-color: #e7e7e7;
     height: 30px;
+}
+
+.header {
+    background: #fff;
 }
 
 .searchbarUl {
@@ -436,7 +445,7 @@ ul.searchbarUl::after {
 .search_bar {
     width: 544px;
     height: 30px;
-    border: 3px solid #e60012;
+    border: 2px solid #e60012;
     margin-top: 12px;
     position: relative;
 }
@@ -454,7 +463,7 @@ ul.searchbarUl::after {
 .searchkindselector {
     position: absolute;
     width: 70px;
-    margin-left: -3px;
+    margin-left: -2px;
     margin-top: 1px;
     background: #fff;
 }
@@ -468,11 +477,9 @@ ul.searchkindselector>li {
 
 ul.searchkindselector>li:first-child {
     border-right: 1px solid #bfbfbf;
-    border-left: 3px solid #e60012;
+    border-left: 2px solid #e60012;
 }
-.jsnav{
-	cursor: pointer;
-}
+
 .search_input {
     border: none;
     outline: none;
@@ -535,16 +542,21 @@ a.infolink {
 }
 
 .loginright>a.infolink:not(:last-child)::after {
-    content: '|';
+    content: '';
     position: absolute;
     right: -15px;
     color: #666 !important;
+    border-left: 1px solid #bfbfbf;
+    border-right:1px solid #fff;
+    height:12px;
+    top:2px;
 }
 
 a.infolink::before {
-    content: '∨';
+    content: url("../icon/slidedown_icon.png");
     position: absolute;
     right: 0;
+    top: -1px;
 }
 
 a.login_a {
@@ -553,11 +565,14 @@ a.login_a {
 }
 
 .login_a::after {
-    content: '|';
+    content: '';
     position: absolute;
-    right: -1px;
-    top: -1px;
+    right: -2px;
+    top: 2px;
     color: #666 !important;
+    border-left: 1px solid #bfbfbf;
+    border-right:1px solid #fff;
+    height:12px;
 }
 
 .loginleft>a.pagelink:not(:last-child)::after {
@@ -605,7 +620,7 @@ a.login_a {
 li.jsnav.mainnavbar {
     width: 200px;
     margin: auto;
-    background: #e60012;
+    background: #e60012 url("../icon/btns_icon.png") no-repeat 90% 15px;
     color: #fff;
     position: relative;
     z-index: 99;
@@ -640,17 +655,18 @@ li.maingoodsli::before {
 }
 
 li.maingoodsli::after{
-    content: '>';
+    content: url("../icon/slidedown_icon.png");
     position: absolute;
     right: 15px;
     top: 8px;
+    transform:rotate(-90deg);
 }
 
 .adv_bar{
     height: 300px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .adv_bar .navadvator {
@@ -667,21 +683,26 @@ a.jskindlink {
 /*titles*/
 .boxtitlename,.goodstabletitlename {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     color: #333;
     padding-left: 10px;
     /* height: 18px; */
     display: inline-block;
     position: relative;
 }
+
+b.boxtitlename.fontsize-14 {
+    margin-top: 5px;
+}
 .boxtitle {
     padding: 10px 15px;
+    border-bottom: 1px solid #f6f6f6;
 }
 
 .boxtitlename::before {
     content: '';
     display: inline-block;
-    border-left: 2px solid red;
+    border-left: 3px solid #e60012;
     height: 18px;
     position: absolute;
     top: 4px;
@@ -737,6 +758,20 @@ a.anymore.hereshow {
     position: relative;
 }
 
+a.anymore.showall {
+    padding-right: 15px;
+    position: relative;
+    background: url("../icon/showall_icon.png") no-repeat center center;
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    right: 5px;
+}
+
+a.anymore.showall.showed,a.anymore.showall:hover{
+    transform: rotateX(180deg);
+}
+
 a.anymore.hereshow::after {
     content: '∨';
     position: absolute;
@@ -775,7 +810,7 @@ a.frendlink:hover {
     content: '|';
     position: absolute;
     right: -1px;
-    color: #666 !important;
+    color: #f6f6f6 !important;
 }
 
 .footer{

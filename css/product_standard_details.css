@@ -67,7 +67,7 @@
 }
 .standards_l_list>li:not(:last-child)::after{
 	content: ">";
-	margin-right:10px ;
+	margin-right:7px ;
 }
 
 .inner_sixtitle{
@@ -97,8 +97,8 @@
 .standard_details_tb{
 	width: 853px;
 	margin: auto;
-	border:1px solid #efefef;
-	border-color: #efefef;
+	border:1px solid #e3ecf1;
+	border-color: #e3ecf1;
 	margin-bottom: 34px;
 }
 .standard_details_tb>caption{

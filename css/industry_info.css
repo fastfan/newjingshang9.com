@@ -72,6 +72,7 @@
 	overflow: hidden;
 	border-bottom: 1px solid #efefef;
     padding: 20px 0;
+    cursor: pointer;
 }
 .industry_leftcontent2{
 	border: none;

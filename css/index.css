@@ -427,3 +427,35 @@ img.goodsimage{
     float: left;
     padding: 10px 0;
 }
+
+/*悬浮窗*/
+#talkbox{
+    position:absolute;
+    width: 160px;
+    height: 200px;
+    background: #fff;
+    right: 0;
+    padding: 20px;
+    margin-top: -295px;
+    text-align: center;
+}
+
+#talkbox .head_img img {
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50% 50%;
+    display: block;
+    margin: 30px auto;
+}
+
+.hellowuser {
+    margin: 30px auto;
+}
+
+#talkbox button {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #bfbfbf;
+}

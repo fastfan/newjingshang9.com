@@ -33,24 +33,25 @@
 <div class="regpagebody">
     <div class="container">
         <div class="userinfowriteborder">
-            <div class="tabuser">
+            <!--<div class="tabuser">
                 <h3 class="buyerreg">买家注册</h3>
                 <h3 class="saillerreg">卖家注册</h3>
-            </div>
+            </div>-->
+
+            <ul class="userkind_tab">
+                <li class="labelli"><label><input type="radio" name="usertype" class="usertype">采购商</label></li>
+                <li class="labelli"><label><input type="radio" name="usertype" class="usertype">供应商</label></li>
+                <li class="labelli"><label><input type="radio" name="usertype" class="usertype">二者皆是</label></li>
+            </ul>
+
             <ul class="writinghandle">
-                <li class="writinglabel">姓名：</li>
+                <li class="writinglabel">账号：</li>
                 <li class="writing_inputarea">
                     <input type="text" class="writing_input">
                 </li>
-                <li class="writedwrong">请输入姓名</li>
+                <li class="writedwrong">请输入账号</li>
             </ul>
-            <ul class="writinghandle">
-                <li class="writinglabel">手机号码：</li>
-                <li class="writing_inputarea">
-                    <input type="text" class="writing_input">
-                </li>
-                <li class="writedwrong">请输入手机号码</li>
-            </ul>
+
             <ul class="writinghandle">
                 <li class="writinglabel">设置密码：</li>
                 <li class="writing_inputarea">
@@ -65,6 +66,23 @@
                 </li>
                 <li class="writedwrong">请再次输入密码</li>
             </ul>
+
+            <ul class="writinghandle">
+                <li class="writinglabel">姓名：</li>
+                <li class="writing_inputarea">
+                    <input type="text" class="writing_input">
+                </li>
+                <li class="writedwrong">请输入姓名</li>
+            </ul>
+
+            <ul class="writinghandle">
+                <li class="writinglabel">手机号码：</li>
+                <li class="writing_inputarea">
+                    <input type="text" class="writing_input">
+                </li>
+                <li class="writedwrong">请输入手机号码</li>
+            </ul>
+
             <ul class="writinghandle">
                 <li class="writinglabel">手机验证码：</li>
                 <li class="writing_inputarea">
@@ -80,6 +98,25 @@
                 </li>
                 <li class="writedwrong">请输入邮箱</li>
             </ul>
+
+            <ul class="writinghandle">
+                <li class="writinglabel">公司名称：</li>
+                <li class="writing_inputarea">
+                    <input type="text" class="writing_input">
+                </li>
+                <li class="writedwrong">请输入公司名称</li>
+            </ul>
+
+            <ul class="writinghandle">
+                <li class="writinglabel">公司地址：</li>
+                <li class="writing_inputarea">
+                    <select><option>河北</option></select>
+                    <select><option>石家庄</option></select>
+                    <select><option>什么市</option></select>
+                </li>
+                <li class="writedwrong"><select><option>什么</option></select></li>
+            </ul>
+
             <div class="agreeline" style="margin-left: 206px;">
                 <label>
                     <input type="checkbox"> 我已阅读并同意
