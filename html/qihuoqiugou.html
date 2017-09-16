@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>期货求购</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <link href="../css/common.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/brandpage.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/kkpager_blue.css"/>
+   <script src="../js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+   <script src="../js/kkpager.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body>
+<body style="background-color: #f6f6f6;">
 <div class="header">
     <div class="loginline">
         <div class="container">
             <div class="loginleft">
-                <a href="" class="wellcome">您好，欢迎来到紧商网！</a>
-                <a href="" class="login_a" id="clicktolog">请登录</a>
-                <a href="" class="login_a" id="clicktoreg">请注册</a>
-                <a href="" class="login_a" id="username">15922884455</a>
-                <a class="infolink">浙江省杭州市萧山区</a>
-            </div>
+				<a href="" class="wellcome">您好，欢迎来到紧商网！</a>
+				<a href="login.html" class="login_a login_b" id="clicktolog">请登录</a>
+				<a href="reg.html" class="login_a login_b" id="clicktoreg">请注册</a>
+				<a href="" class="login_a zanshiyingcao" id="username">15922884455</a>
+				<a class="infolink infolink2">浙江省杭州市萧山区</a>
+			</div>
             <div class="loginright">
                 <a href="" class="infolink">我的紧商</a>
-                <a href="" class="infolink">手机端紧商</a>
-                <a href="" class="infolink">客户中心</a>
-                <a href="" class="infolink">购物车</a>
+	            <a href="" class="infolink">购物车</a>
+	            <a href="" class="infolink">微信关注</a>
+	            <a href="" class="infolink">手机端</a>
+	            <a href="" class="infolink">网站导航</a>
             </div>
         </div>
     </div>
     <div class="container">
         <ul class="searchbarUl">
-            <li><img src="../images/logo.png"></li>
+            <li><img src="../images/logo-jinshang9.png"></li>
             <li>
                 <div class="search_bar">
 
@@ -69,25 +74,27 @@
                     <div class="hiddennav"></div>
                 </div>
             </li>
-            <li class="jsnav"><a class="jsnavlink">首页</a></li>
-            <li class="jsnav"><a class="jsnavlink">现货求购</a></li>
-            <li class="jsnav"><a class="jsnavlink">期货交易</a></li>
-            <li class="jsnav"><a class="jsnavlink">供应商</a></li>
-            <li class="jsnav"><a class="jsnavlink">产品标准</a></li>
-            <li class="jsnav"><a class="jsnavlink">行业资讯</a></li>
-            <li class="jsnav"><a class="jsnavlink">限时购</a></li>
+            <li class="jsnav">
+				<a class="jsnavlink" href="../index.html">首页</a>
+			</li>
+			<li class="jsnav">
+				<a class="jsnavlink" href="xianhuoqiugou.html">现货求购</a>
+			</li>
+			<li class="jsnav">
+				<a class="jsnavlink navred" href="qihuoqiugou.html">期货交易</a>
+			</li>
+            <li class="jsnav"><a class="jsnavlink" href="supplier.html">供应商</a></li>
+            <li class="jsnav"><a class="jsnavlink" href="product_standard.html">产品标准</a></li>
+            <li class="jsnav"><a class="jsnavlink" href="industry_info.html">行业资讯</a></li>
         </ul>
     </div>
 </div>
 <div class="container">
    <div class="goodsselectbyparms">
-       <div class="goodsselecttile">
-           <a class="backtoindex">首页</a>
-           <a class="kidpagelink">现货求购</a>
-       </div>
+       
        <div class="goodsselectbox">
-           <div class="boxtitle">
-               <b class="boxtitlename">商品选择</b>
+           <div class="boxtitle" style="margin-top: 15px;">
+               <b class="boxtitlename boxtitlename2">商品选择</b>
                <a class="anymore hereshow">筛选</a>
            </div>
            <table class="goodsparams">
@@ -216,14 +223,14 @@
                         </th>
                     </tr>
                     <tr>
-                        <td width="33%">价格：<span class="qihuoprice">900</span>/千 </td>
-                        <td width="33%">标准：NG311</td>
-                        <td width="33%">材料：不锈钢</td>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
                     </tr>
                     <tr>
-                        <td>规格：M12</td>
-                        <td>尺寸：M12</td>
-                        <td>长度：26CM</td>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
                     </tr>
                 </table>
             </div>
@@ -236,14 +243,14 @@
                         </th>
                     </tr>
                     <tr>
-                        <td width="33%">价格：<span class="qihuoprice">900</span>/千 </td>
-                        <td width="33%">标准：NG311</td>
-                        <td width="33%">材料：不锈钢</td>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
                     </tr>
                     <tr>
-                        <td>规格：M12</td>
-                        <td>尺寸：M12</td>
-                        <td>长度：26CM</td>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
                     </tr>
                 </table>
             </div>
@@ -256,14 +263,14 @@
                         </th>
                     </tr>
                     <tr>
-                        <td width="33%">价格：<span class="qihuoprice">900</span>/千 </td>
-                        <td width="33%">标准：NG311</td>
-                        <td width="33%">材料：不锈钢</td>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
                     </tr>
                     <tr>
-                        <td>规格：M12</td>
-                        <td>尺寸：M12</td>
-                        <td>长度：26CM</td>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
                     </tr>
                 </table>
             </div>
@@ -276,14 +283,14 @@
                         </th>
                     </tr>
                     <tr>
-                        <td width="33%">价格：<span class="qihuoprice">900</span>/千 </td>
-                        <td width="33%">标准：NG311</td>
-                        <td width="33%">材料：不锈钢</td>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
                     </tr>
                     <tr>
-                        <td>规格：M12</td>
-                        <td>尺寸：M12</td>
-                        <td>长度：26CM</td>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
                     </tr>
                 </table>
             </div>
@@ -296,168 +303,228 @@
                         </th>
                     </tr>
                     <tr>
-                        <td width="33%">价格：<span class="qihuoprice">900</span>/千 </td>
-                        <td width="33%">标准：NG311</td>
-                        <td width="33%">材料：不锈钢</td>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
                     </tr>
                     <tr>
-                        <td>规格：M12</td>
-                        <td>尺寸：M12</td>
-                        <td>长度：26CM</td>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
                     </tr>
                 </table>
             </div>
+            <div class="qihuobox">
+                <table class="qihuofosail">
+                    <tr>
+                        <th colspan="3">
+                            <div class="qihuoname left">GB5789-1986半牙 平端 A型</div>
+                            <div class="dealtime right">2017年 10月 17日</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
+                    </tr>
+                    <tr>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="qihuobox">
+                <table class="qihuofosail">
+                    <tr>
+                        <th colspan="3">
+                            <div class="qihuoname left">GB5789-1986半牙 平端 A型</div>
+                            <div class="dealtime right">2017年 10月 17日</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
+                    </tr>
+                    <tr>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="qihuobox">
+                <table class="qihuofosail">
+                    <tr>
+                        <th colspan="3">
+                            <div class="qihuoname left">GB5789-1986半牙 平端 A型</div>
+                            <div class="dealtime right">2017年 10月 17日</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
+                    </tr>
+                    <tr>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="qihuobox">
+                <table class="qihuofosail">
+                    <tr>
+                        <th colspan="3">
+                            <div class="qihuoname left">GB5789-1986半牙 平端 A型</div>
+                            <div class="dealtime right">2017年 10月 17日</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
+                    </tr>
+                    <tr>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="qihuobox">
+                <table class="qihuofosail">
+                    <tr>
+                        <th colspan="3">
+                            <div class="qihuoname left">GB5789-1986半牙 平端 A型</div>
+                            <div class="dealtime right">2017年 10月 17日</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td width="33%"><span class="diffcolor2">价格：</span>￥<span class="qihuoprice">900</span>/千 </td>
+                        <td width="33%"><span class="diffcolor2">标准：</span>NG311</td>
+                        <td width="33%"><span class="diffcolor2">材料：</span>不锈钢</td>
+                    </tr>
+                    <tr>
+                        <td><span class="diffcolor2">规格：</span>M12</td>
+                        <td><span class="diffcolor2">尺寸：</span>M12</td>
+                        <td><span class="diffcolor2">长度：</span>26CM</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="" style="padding-top: 50px;clear: both;">
+				<div id="kkpager"></div>
+			</div>
+				
+			<script type="text/javascript">
+				//生成分页控件  
+				kkpager.generPageHtml({
+				    pno : '${p.pageNo}',
+				    mode : 'click', //可选，默认就是link
+				    //总页码  
+		//					    total : '${p.totalPage}',
+				    total : 10, 
+				    //总数据条数  
+				    totalRecords : '${p.totalCount}'
+				});
+			</script>
 
         </div>
         <div class="right_bar">
             <div class="productrecommend">
-                <div class="recommendtitle">
-                    <b>产品推荐</b>
-                    <a class="anymore hereshow">查看更多</a>
-                </div>
-                <div class="therecom">
-                    <div class="productimg" style="background: url('../images/productimg.jpg') 50% 50% no-repeat"></div>
-                    <div class="productparas">
-                        <span class="productname">外六角螺母</span>
-                        <span class="productprice">55.00/千</span>
-                    </div>
-                </div>
-                <div class="therecom">
-                    <div class="productimg" style="background: url('../images/productimg.jpg') 50% 50% no-repeat"></div>
-                    <div class="productparas">
-                        <span class="productname">外六角螺母</span>
-                        <span class="productprice">55.00/千</span>
-                    </div>
-                </div>
+                <div class="product_rcd">
+					<div class="rcd_list">
+						<h4>产品推荐</h4>
+						<a href="javascript:;">更多 ></a>
+					</div>
+					<div class="rcd_img ">
+						<img src="../images/product_detailsicon2.jpg" />
+					</div>
+					<div class="rcd_text">
+						<span class="rcd_name">内六角螺母</span>
+						<span class="rcd_price">￥55.00/千</span>
+					</div>
+				</div>
+				<div class="product_rcd product_rcd2">
+					<div class="rcd_img ">
+						<img src="../images/product_detailsicon2.jpg" />
+					</div>
+					<div class="rcd_text rcd_text2">
+						<span class="rcd_name">内六角螺母</span>
+						<span class="rcd_price">￥55.00/千</span>
+					</div>
+				</div>
             </div>
             <div class="productline">
-                <div class="recommendtitle">
-                    <b>产品标准</b>
-                    <a class="anymore hereshow">查看更多</a>
-                </div>
-                <ul class="standardul">
-                    <li>GB/T 5782-2000 六角头螺栓</li>
-                    <li>机械性能：钢 14H 22H</li>
-                    <li>螺纹精度：6G</li>
-                </ul>
-                <ul class="standardul">
-                    <li>GB/T 5782-2000 六角头螺栓</li>
-                    <li>机械性能：钢 14H 22H</li>
-                    <li>螺纹精度：6G</li>
-                </ul>
-                <ul class="standardul">
-                    <li>GB/T 5782-2000 六角头螺栓</li>
-                    <li>机械性能：钢 14H 22H</li>
-                    <li>螺纹精度：6G</li>
-                </ul>
-                <ul class="standardul">
-                    <li>GB/T 5782-2000 六角头螺栓</li>
-                    <li>机械性能：钢 14H 22H</li>
-                    <li>螺纹精度：6G</li>
-                </ul>
+                <div class="rcd_list">
+					<h4>产品标准</h4>
+					<a href="javascript:;">更多 ></a>
+				</div>
+				<div class="productline_imglists" >
+					<div class="left productline_img">
+						<img src="../images/img118_118.png"/>
+					</div>
+					<ul class="standardul right">
+	                    <li>六角头螺栓</li>
+	                    <li>GB/T 5782-2000 </li>
+	                    <li>机械性能：钢 14H 22H</li>
+	                    <li>螺纹精度：6G</li>
+	                </ul>
+				</div>
+				<div class="bottom_line">
+					
+				</div>
+				<div class="productline_imglists" >
+					<div class="left productline_img">
+						<img src="../images/img118_118.png"/>
+					</div>
+					<ul class="standardul right">
+	                    <li>六角头螺栓</li>
+	                    <li>GB/T 5782-2000 </li>
+	                    <li>机械性能：钢 14H 22H</li>
+	                    <li>螺纹精度：6G</li>
+	                </ul>
+				</div>
             </div>
-            <div class="natruelues">
-                <div class="recommendtitle">
-                    <b>行业咨询</b>
-                    <a class="anymore hereshow">查看更多</a>
-                </div>
-                <ul class="industryinformation">
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                    <li><a>欧盟宣布对中国钢材不锈钢产品认真对待等等等等</a></li>
-                </ul>
-            </div>
+            <div class="reletive_cpy">
+					<div class="cpy_bigtitle"><h4 class="cpy_title">行业资讯</h4><span class="toseemore">查看更多<span class="toseemore_icon">></span></span></div>
+					<ul class="cpy_list cpy_list2">
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						
+					</ul>
+				</div>
         </div>
     </div>
+    
     <div class="areyoufinding">您是不是在找：
         <ul>
             <li class="findingli"><a>螺丝</a></li>
-            <li class="findingli"><a>螺母</a></li>
+            <li class="findingli "><a>螺母</a></li>
             <li class="findingli"><a>螺帽</a></li>
             <li class="findingli"><a>螺栓</a></li>
         </ul>
     </div>
 </div>
 <div class="footbar">
-    <div class="container">
-        <ul class="companylinks">
-            <li class="fisherknows">
-                <ul class="footerlinks">
-                    <li>新手上路</li>
-                    <li><a class="pagelink">什么是现货供应</a> </li>
-                    <li><a class="pagelink">什么是远期供应</a> </li>
-                    <li><a class="pagelink">什么是现货采购</a> </li>
-                    <li><a class="pagelink">什么是现货供应</a> </li>
-                </ul>
-            </li>
-            <li class="paykinds">
-                <ul class="footerlinks">
-                    <li>付款方式</li>
-                    <li><a class="pagelink">第三方支付</a> </li>
-                    <li><a class="pagelink">账户余额</a> </li>
-                    <li><a class="pagelink">紧商白条</a> </li>
-                </ul>
-            </li>
-            <li class="serviceandjoin">
-                <ul class="footerlinks">
-                    <li>服务加盟</li>
-                    <li><a class="pagelink">什么是服务商</a> </li>
-                    <li><a class="pagelink">加盟条件</a> </li>
-                    <li><a class="pagelink">如何申请加盟</a> </li>
-                </ul>
-            </li>
-            <li class="touchwithus">
-                <ul class="footerlinks">
-                    <li>联系我们</li>
-                    <li><a class="pagelink">电话：0571-83263827</a> </li>
-                    <li><a class="pagelink">传真：0571-83263829</a> </li>
-                    <li><a class="pagelink">周一至周六，8:30-17:30</a> </li>
-                </ul>
-            </li>
-            <li class="aboutus" style="width: 72px;">
-                <ul class="footerlinks">
-                    <li>关于我们</li>
-                    <li><a class="pagelink">平台简介</a> </li>
-                    <li><a class="pagelink">平台宗旨</a> </li>
-                    <li><a class="pagelink">团队文化</a> </li>
-                    <li><a class="pagelink">招聘岗位</a> </li>
-                </ul>
-            </li>
-        </ul>
-
-        <div class="linkbox">
-            <span>友情链接：</span>
-            <a href="" class="frendlink">中国工控网</a>
-            <a href="" class="frendlink">资源社区</a>
-            <a href="" class="frendlink">企汇网</a>
-            <a href="" class="frendlink">电子元器件</a>
-            <a href="" class="frendlink">久久信息网</a>
-            <a href="" class="frendlink">万商网</a>
-            <a href="" class="frendlink">化工产品网</a>
-            <a href="" class="frendlink">淘淘</a>
-            <a href="" class="frendlink">塑料机械</a>
-            <a href="" class="frendlink">全球商户网</a>
-            <a href="" class="frendlink">更多</a>
-        </div>
-        <div class="linkbox">
-            <span>其他链接：</span>
-            <a href="" class="frendlink">关于我们</a>
-            <a href="" class="frendlink">法律声明</a>
-            <a href="" class="frendlink">投资洽谈</a>
-            <a href="" class="frendlink">联系我们</a>
-            <a href="" class="frendlink">服务协议</a>
-            <a href="" class="frendlink">隐私声明</a>
-            <a href="" class="frendlink">版权声明</a>
-            <a href="" class="frendlink">网站地图</a>
-            <a href="" class="frendlink">泸ICP备09003861号</a>
-        </div>
-        <div class="footeradvbar"></div>
-    </div>
     <div class="footer">
         <div class="comaneyinfos">
             2017紧商科技股份有限公司 浙ICP备16009097号，增值电信业务经营许可证：浙B2-20160606  <a class="footlink">联系我们</a><a class="footlink">网站地图</a>
