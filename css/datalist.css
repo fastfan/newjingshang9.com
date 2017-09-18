@@ -41,6 +41,7 @@
 
 .futureBuy_content_text2>span {
     font-size: 14px;
+    margin-right: 34px;
 }
 
 .futureBuy_content_text2>span:not(:first-child) {
@@ -99,7 +100,7 @@ table.futureBuy_content_tb caption {
     text-align: left;
     font-size: 16px;
     font-weight: bold;
-    border-bottom: 1px solid #f6f6f6;
+    border-bottom: 1px solid #ccc;
 }
 
 table.futureBuy_content_tb td,table.futureBuy_content_tb th {
@@ -126,7 +127,30 @@ ul.futureBuy_content_title>li:not(:last-child)::after {
     display:inline-block;
     margin-right: -5px;
 }
-
+.count_count{
+	overflow: hidden;
+}
+.delivery_time{
+	margin-right: 20px;
+}
+.count_count>li{
+	float: left;
+	width: 186px;
+	height: 28px;
+	border: 1px solid #bfbfbf;
+	line-height: 30px;
+	text-align: center;
+	margin-right: 50px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.count_count>li:hover{
+	color: #e60012;
+	border: 1px solid #e60012;
+}
+.count_count>li:hover .count_color{
+	color: #e60012;
+}
 .industry_totalwidth.futureBuy_totalwidth{
     width: 298px;
     border: 1px solid #f9f9f9;

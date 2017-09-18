@@ -634,7 +634,7 @@ a.login_a {
 li.jsnav.mainnavbar {
     width: 200px;
     margin: auto;
-    background: #e60012 url("../icon/btns_icon.png") no-repeat 90% 15px;
+    background: #e60012 url("../icon/btns_icon.png") no-repeat 90% 16px;
     color: #fff;
     position: relative;
     z-index: 99;
@@ -764,7 +764,8 @@ a.anymore {
     display: inline-block;
     float: right;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 12px;
+    color: #333;
 }
 
 a.anymore.hereshow {
@@ -870,7 +871,8 @@ a.frendlink:hover {
 
 input.buynumber {
     width: 30px;
-    padding: 3px;
+    text-align: center;
+    line-height: 23px;
 }
 
 button.cutclick {
@@ -1060,6 +1062,9 @@ ul.standardul {
 	border-bottom: 1px solid #efefef;
 	color: #333;
 }
+.cpy_list2>li:last-child{
+	border: none;
+}
 .cpy_list>li::before{
 	content: url(../icon/set_icon2.png);
     margin: 0 9px 0 15px;
@@ -1076,4 +1081,10 @@ ul.standardul {
 	color: #d4d4d4;
 	font-weight: bolder;
     font-size: 14px;
+}
+.count_color{
+	color: #ff7104;
+}
+.count_color2{
+	color: #e60012;
 }

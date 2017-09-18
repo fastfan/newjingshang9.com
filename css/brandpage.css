@@ -24,6 +24,7 @@
     display: block;
     margin-bottom: 20px;
     background: #fff;
+    clear: both;
 }
 
 .goodsparams tr>td:first-child{
@@ -238,6 +239,7 @@ table.qihuofosail th,table.qihuofosail td {
     margin-bottom: 10px;
     background: #fff;
     padding: 15px 0;
+    cursor: pointer;
 }
 
 .xianhuobox:hover{
@@ -276,7 +278,10 @@ table.qihuofosail th,table.qihuofosail td {
     color: #e60012;
     font-weight: 600;
 }
-
+.arrow_close{
+	vertical-align: baseline;
+	margin-left: 5px;
+}
 .selected_label>li{
     display:inline-block;
     margin:0 5px;
@@ -287,6 +292,7 @@ table.qihuofosail th,table.qihuofosail td {
 
 ul.selected_label {
     display: inline-block;
+    margin-left: 19px;
 }
 
 .selected_label>li>em{
@@ -296,6 +302,7 @@ ul.selected_label {
 }
 .boxtitle2{
 	padding: 26px 0 14px 16px;
+	overflow: hidden;
 }
 .boxtitlename2{
 	font-weight: normal !important;
@@ -307,4 +314,22 @@ ul.selected_label {
 .diffcolor2{
 	color: #666;
 	font-size: 14px;
+}
+.getkeyword{
+	overflow: hidden;
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+.getkeyword>li{
+	float: left;
+	margin-right: 12px;
+}
+.getkeyword>li>a{
+	font-size: 14px;
+	color: #333;
+}
+.aselected{
+	color:#E60012 !important;
 }

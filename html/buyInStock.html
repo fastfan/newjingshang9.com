@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>期现货求购</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/brandpage.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../css/kkpager_blue.css"/>
+    <script src="../js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/kkpager.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body style="background: #f6f6f6;">
+<div class="header">
+    <div class="loginline">
+        <div class="container">
+            <div class="loginleft">
+				<a href="" class="wellcome">您好，欢迎来到紧商网！</a>
+				<a href="login.html" class="login_a login_b" id="clicktolog">请登录</a>
+				<a href="reg.html" class="login_a login_b" id="clicktoreg">请注册</a>
+				<a href="" class="login_a zanshiyingcao" id="username">15922884455</a>
+				<a class="infolink infolink2">浙江省杭州市萧山区</a>
+			</div>
+           <div class="loginright">
+	            <a href="" class="infolink">我的紧商</a>
+	            <a href="" class="infolink">购物车</a>
+	            <a href="" class="infolink">微信关注</a>
+	            <a href="" class="infolink">手机端</a>
+	            <a href="" class="infolink">网站导航</a>
+           </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="searchbarUl">
+            <li><img src="../images/logo-jinshang9.png"></li>
+            <li>
+                <div class="search_bar">
+
+                    <ul class="searchkindselector">
+                        <li>现货</li>
+                        <li style="display: none;">现货</li>
+                        <li style="display: none;">现货</li>
+                    </ul>
+
+                    <input type="text" class="search_input" placeholder="紧固件">
+                    <button class="searchclick">搜索</button>
+                </div>
+            </li>
+            <li>
+                <button class="needtobuy">我要采购</button>
+                <span class="tellus">0571-6666666</span>
+            </li>
+        </ul>
+    </div>
+    <div style="border-bottom: 2px solid #e60012">
+        <ul class="jsnav_bar">
+            <li class="jsnav mainnavbar">
+                <div>商品分类</div>
+                <div class="maingoodsnav" style="display: none;">
+                    <div class="maingoodskinds">
+
+                        <ul>
+                            <li class="maingoodsli"><a class="jskindlink">紧固件</a></li>
+                            <li class="maingoodsli"><a class="jskindlink">工具</a></li>
+                            <li class="maingoodsli"><a class="jskindlink">线材</a></li>
+                            <li class="maingoodsli"><a class="jskindlink">辅料</a></li>
+                            <li class="maingoodsli"><a class="jskindlink">模具</a></li>
+                            <li class="maingoodsli"><a class="jskindlink">油品</a></li>
+                            <li class="maingoodsli"><a class="jskindlink">机械设备</a></li>
+                            <li class="maingoodsli"><a class="jskindlink">办公用品</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="hiddennav"></div>
+                </div>
+            </li>
+            <li class="jsnav">
+				<a class="jsnavlink" href="../index.html">首页</a>
+			</li>
+			<li class="jsnav">
+				<a class="jsnavlink navred" href="buyInStock.html">现货求购</a>
+			</li>
+			<li class="jsnav">
+				<a class="jsnavlink" href="buyInStock.html">期货交易</a>
+			</li>
+            <li class="jsnav"><a class="jsnavlink" href="supplier.html">供应商</a></li>
+            <li class="jsnav"><a class="jsnavlink" href="product_standard.html">产品标准</a></li>
+            <li class="jsnav"><a class="jsnavlink" href="industry_info.html">行业资讯</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="goodsselectbyparms">
+        
+        <div class="goodsselectbox">
+            <div class="boxtitle boxtitle2">
+                <b class="boxtitlename boxtitlename2 left">产品求购</b>
+                <ul class="selected_label left">
+                    <li>紧固件<img class="arrow_close" src="../icon/arrow_close.png" alt="关闭的图标" /></li>
+                    <li>紧固件<img class="arrow_close" src="../icon/arrow_close.png" alt="关闭的图标" /></li>
+                </ul>
+                <a class="anymore">收起所有分类</a>
+            </div>
+            <table class="goodsparams">
+                <tr>
+                    <td width="55px"  valign="top">
+                        <b class="goodsparamtitle">分类：</b>
+                    </td>
+                    <td width="1040px" valign="top">
+                        <ul class="paramsnamecontainer">
+                            <li class="goodsparamname">所有</li>
+                            <li class="goodsparamname">紧固件</li>
+                            <li class="goodsparamname">工具</li>
+                            <li class="goodsparamname">钢材</li>
+                            <li class="goodsparamname">辅料</li>
+                            <li class="goodsparamname">模具</li>
+                            <li class="goodsparamname">油品</li>
+                            <li class="goodsparamname">办公用品</li>
+                            <li class="goodsparamname">机械设备</li>
+                        </ul>
+                    </td>
+                    <td width="100px"  valign="top"></td>
+                </tr>
+                <tr>
+                    <td width="55px"  valign="top">
+                        <b class="goodsparamtitle">品名：</b>
+                    </td>
+                    <td width="1040px" valign="top">
+                        <ul class="paramsnamecontainer">
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                            <li class="goodsparamname">外六角全牙螺栓</li>
+                        </ul>
+                    </td>
+                    <td width="85px"  valign="top"><a class="anymore showall"></a></td>
+                </tr>
+                <tr>
+                    <td width="55px"  valign="top">
+                        <b class="goodsparamtitle">材质：</b>
+                    </td>
+                    <td width="1040px" valign="top">
+                        <ul class="paramsnamecontainer">
+                            <li class="goodsparamname">不锈钢</li>
+                            <li class="goodsparamname">不锈钢</li>
+                            <li class="goodsparamname">不锈钢</li>
+                        </ul>
+                    </td>
+                    <td width="85px"  valign="top"><a class="anymore showall"></a></td>
+                </tr>
+                <tr>
+                    <td width="55px"  valign="top">
+                        <b class="goodsparamtitle">品牌：</b>
+                    </td>
+                    <td width="1040px" valign="top">
+                        <ul class="paramsnamecontainer">
+                            <li class="goodsparamname">奥展</li>
+                            <li class="goodsparamname">奥展</li>
+                            <li class="goodsparamname">奥展</li>
+                        </ul>
+                    </td>
+                    <td width="85px"  valign="top"><a class="anymore showall"></a></td>
+                </tr>
+                <tr>
+                    <td width="55px"  valign="top">
+                        <b class="goodsparamtitle">尺寸：</b>
+                    </td>
+                    <td width="1040px" valign="top">
+                        <ul class="paramsnamecontainer">
+                            <li class="goodsparamname">M4</li>
+                            <li class="goodsparamname">M4</li>
+                            <li class="goodsparamname">M4</li>
+                            <li class="goodsparamname">M5</li>
+                            <li class="goodsparamname">M6</li>
+                        </ul>
+                    </td>
+                    <td width="85px"  valign="top"><a class="anymore showall"></a></td>
+                </tr>
+                <tr>
+                    <td width="55px"  valign="top">
+                        <b class="goodsparamtitle">长度：</b>
+                    </td>
+                    <td width="1040px" valign="top">
+                        <ul class="paramsnamecontainer">
+                            <li class="goodsparamname">25</li>
+                            <li class="goodsparamname">26</li>
+                            <li class="goodsparamname">27</li>
+                            <li class="goodsparamname">28</li>
+                            <li class="goodsparamname">29</li>
+                        </ul>
+                    </td>
+                    <td width="85px"  valign="top"><a class="anymore showall"></a></td>
+                </tr>
+                <tr>
+                    <td width="55px"  valign="top">
+                        <b class="goodsparamtitle">牌号：</b>
+                    </td>
+                    <td width="1040px" valign="top">
+                        <ul class="paramsnamecontainer">
+                            <li class="goodsparamname">306</li>
+                            <li class="goodsparamname">306</li>
+                            <li class="goodsparamname">306</li>
+                            <li class="goodsparamname">306</li>
+                            <li class="goodsparamname">306</li>
+                        </ul>
+                    </td>
+                    <td width="85px"  valign="top"><a class="anymore showall"></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="listwindow">
+        <div class="lists">
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="xianhuobox">
+                <div class="xianhuoimg left"><img src="../images/toolsbox.jpg"></div>
+                <div class="xianhuotable right">
+                    <table>
+                        <caption>GB57789-1986 半牙 平端 A型<div class="right">￥<span class="xianhuoprice">55.0</span>/千</div> </caption>
+                        <tr>
+                            <td width="33%">品牌：<span class="diffcolor">奥展</span></td>
+                            <td width="33%">标准：<span class="diffcolor">NG311</span></td>
+                            <td width="33%">材料：<span class="diffcolor">不锈钢</span></td>
+                        </tr>
+                        <tr>
+                            <td>规格：<span class="diffcolor">M12</span></td>
+                            <td>尺寸：<span class="diffcolor">M12</span></td>
+                            <td>长度：<span class="diffcolor">26CM</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">产品描述：功能防锈、装饰、提高耐腐蚀性。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="" style="padding-top: 50px;clear: both;">
+				<div id="kkpager"></div>
+			</div>
+				
+			<script type="text/javascript">
+				//生成分页控件  
+				kkpager.generPageHtml({
+				    pno : '${p.pageNo}',
+				    mode : 'click', //可选，默认就是link
+				    //总页码  
+//					    total : '${p.totalPage}',
+				    total : 10, 
+				    //总数据条数  
+				    totalRecords : '${p.totalCount}'
+				});
+			</script>
+        </div>
+        <div class="right_bar">
+            <div class="productrecommend">
+                <div class="product_rcd">
+					<div class="rcd_list">
+						<h4>产品推荐</h4>
+						<a href="javascript:;">更多 ></a>
+					</div>
+					<div class="rcd_img ">
+						<img src="../images/product_detailsicon2.jpg" />
+					</div>
+					<div class="rcd_text">
+						<span class="rcd_name">内六角螺母</span>
+						<span class="rcd_price">￥55.00/千</span>
+					</div>
+				</div>
+				<div class="product_rcd product_rcd2">
+					<div class="rcd_img ">
+						<img src="../images/product_detailsicon2.jpg" />
+					</div>
+					<div class="rcd_text rcd_text2">
+						<span class="rcd_name">内六角螺母</span>
+						<span class="rcd_price">￥55.00/千</span>
+					</div>
+				</div>
+            </div>
+            <div class="productline">
+                <div class="rcd_list">
+					<h4>产品标准</h4>
+					<a href="javascript:;">更多 ></a>
+				</div>
+				<div class="productline_imglists" >
+					<div class="left productline_img">
+						<img src="../images/img118_118.png"/>
+					</div>
+					<ul class="standardul right">
+	                    <li>六角头螺栓</li>
+	                    <li>GB/T 5782-2000 </li>
+	                    <li>机械性能：钢 14H 22H</li>
+	                    <li>螺纹精度：6G</li>
+	                </ul>
+				</div>
+				<div class="bottom_line">
+					
+				</div>
+				<div class="productline_imglists" >
+					<div class="left productline_img">
+						<img src="../images/img118_118.png"/>
+					</div>
+					<ul class="standardul right">
+	                    <li>六角头螺栓</li>
+	                    <li>GB/T 5782-2000 </li>
+	                    <li>机械性能：钢 14H 22H</li>
+	                    <li>螺纹精度：6G</li>
+	                </ul>
+				</div>
+            </div>
+            <div class="reletive_cpy">
+					<div class="cpy_bigtitle"><h4 class="cpy_title">行业资讯</h4><span class="toseemore">查看更多<span class="toseemore_icon">></span></span></div>
+					<ul class="cpy_list cpy_list2">
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						<li>
+							<a href="javascript:;">欧盟宣布对中国不锈钢产品产认真对......</a>
+						</li>
+						
+					</ul>
+				</div>
+        </div>
+    </div>
+</div>
+<ul class="getkeyword">
+	<li><a href="javascript:;">你是不是要找：</a></li>
+	<li><a href="javascript:;">螺母</a></li>
+	<li><a href="javascript:;" class="aselected">螺丝</a></li>
+	<li><a href="javascript:;">螺栓</a></li>
+	<li><a href="javascript:;">螺柱</a></li>
+</ul>
+<div class="footbar">
+    <div class="footer">
+        <div class="comaneyinfos">
+            2017紧商科技股份有限公司 浙ICP备16009097号，增值电信业务经营许可证：浙B2-20160606 
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$(".xianhuobox").click(function(){
+			window.open("buyInStock_detailes.html","_self");
+		})
+	})
+</script>
+</body>
+</html>
