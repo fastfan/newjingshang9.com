@@ -345,7 +345,7 @@ span.goodsprice {
 }
 
 .tradenews,.tradenewsrules {
-    width: 858px;
+    width: 885px;
     overflow: hidden;
     border: 1px solid #f6f6f6;
     float: left;
@@ -533,4 +533,41 @@ li.rulesbody:last-child {
 #floorbar>li:last-child {
     background: #f7e0e1;
     color: #e60012;
+}
+
+.industry_left{
+	overflow: hidden;
+	width: 845px;
+	background-color: #fff;
+	padding:0 20px;
+}
+
+.industry_leftcontent{
+	overflow: hidden;
+	border-bottom: 1px solid #efefef;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.industry_leftcontent2{
+	border: none;
+}
+.industry_artical{
+	width: 660px;
+	margin-left: 15px;
+}
+.artical_title{
+	font-size: 16px;
+	color: #111;
+	margin-bottom: 13px;
+}
+.artical_content{
+	font-size: 14px;
+	color: #666;
+	line-height: 24px;
+}
+.right_bar{
+    overflow: hidden;
+    float: right;
+    width: 295px;
+    background-color: #fff;
 }
