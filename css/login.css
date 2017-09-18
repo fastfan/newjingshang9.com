@@ -16,7 +16,7 @@
 }
 
 a.loginsoon {
-    color: #177ae6;
+    color: #ff0000;
 }
 .loginpagebody{
     padding: 100px 110px;
@@ -82,6 +82,7 @@ a.loginsoon {
     float: right;
     font-size: 16px;
     color: #e60012;
+    cursor: pointer;
 }
 
 .regandforget::before{
@@ -90,7 +91,9 @@ a.loginsoon {
     top: 3px;
     right: 6px;
 }
-
+.regbtndiv{
+	overflow: hidden;
+}
 .login_in {
     display: block;
     text-align: center;
@@ -159,19 +162,43 @@ span.lengrageowner {
     font-size: 14px;
     color: #333;
 }
-
+.radio_active{
+	cursor: pointer;
+}
 .labelli {
     display: inline-block;
-    width: 72px;
-    padding-left: 20px;
+    width: 80px;
+    margin-right: 11px;
+    cursor: pointer;
 }
 
 .usertype {
     position: absolute;
-    margin-left: -20px;
+    margin-right: 20px;
     margin-top: 4px;
 }
-
+.radio_select{
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+    background: url(../icon/click_select.png) no-repeat;
+    background-color: #fff;
+    cursor: pointer;
+}
+.radio_select2{
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+    background: url(../icon/click_selectd.png) no-repeat;
+    background-color: #fff;
+    cursor: pointer;
+}
 .tabuser {
     padding: 15px 0;
     font-size: 18px;
@@ -254,7 +281,8 @@ li.writinglabel::before {
 }
 
 .userneedtokonw {
-    color: #ee4133;
+    color: #2783e8;
+    margin-top: 2px;
 }
 
 .clicktoreg {
@@ -270,4 +298,34 @@ li.writinglabel::before {
 .clicktoregdiv {
     margin: 30px 0 0 300px;
     padding-bottom: 30px;
+    clear: both;
+    margin-top: 48px;
+}
+.checkbox_select{
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    background: url(../icon/check_select.png) no-repeat;
+    background-color: #fff;
+    cursor: pointer;
+}
+.checkbox_select2{
+	display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    background: url(../icon/check_selectd.png) no-repeat;
+    background-color: #fff;
+    cursor: pointer;
+}
+.regtype{
+	margin-left: 95px;
+}
+.check_active{
+	margin-left: -24px;
 }

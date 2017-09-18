@@ -5,6 +5,7 @@
     <title>注册页面</title>
     <link href="../css/common.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/login.css" type="text/css">
+    <script src="../js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div class="loginline">
@@ -28,7 +29,7 @@
     <div class="loginpagehead">
         <div class="loginlogo"><img src="../images/logo-jinshang9.png"></div>
         <div class="client_reg" style="float: left;font-size: 20px;color: #666;line-height: 60px;margin-left: 36px;">会员注册</div>
-        <div class="logintellinfo">已有账号，可<a class="loginsoon">直接登录</a> </div>
+        <div class="logintellinfo">已有账号，可<a class="loginsoon" href="login.html">直接登录</a> </div>
     </div>
 </div>
 <div class="regpagebody">
@@ -40,11 +41,29 @@
             </div>-->
 
             <ul class="userkind_tab">
-                <li class="labelli"><label><input type="radio" name="usertype" class="usertype">采购商</label></li>
-                <li class="labelli"><label><input type="radio" name="usertype" class="usertype">供应商</label></li>
-                <li class="labelli"><label><input type="radio" name="usertype" class="usertype">二者皆是</label></li>
+                <li class="labelli">
+                	<input type="radio" name="usertype" class="usertype">
+                	<label class="radio_active">
+                		<div class="radio_select" ></div>
+                		采购商
+                	</label>
+                </li>
+                <li class="labelli">
+                	<input type="radio" name="usertype" class="usertype">
+                	<label class="radio_active">
+                		<div class="radio_select" ></div>
+                		供应商
+                	</label>
+                </li>
+                <li class="labelli">
+                	<input type="radio" name="usertype" class="usertype">
+                	<label class="radio_active">
+                		<div class="radio_select" ></div>
+                		二者皆是
+                	</label>
+                </li>
             </ul>
-
+            
             <ul class="writinghandle">
                 <li class="writinglabel">账号：</li>
                 <li class="writing_inputarea">
@@ -117,13 +136,16 @@
                 </li>
                 <li class="writedwrong"><select><option>什么</option></select></li>
             </ul>
-
-            <div class="agreeline" style="margin-left: 206px;">
-                <label>
-                    <input type="checkbox"> 我已阅读并同意
-                </label>
-                <a class="userneedtokonw">《用户注册协议》</a>
+         <div class="" style="overflow: hidden;">
+         	<div class="agreeline left" style="margin-left: 206px;">
+               <input type="checkbox" class="regtype" name="regtype">                  
+               <label class="check_active">    
+	               	<div class="checkbox_select checkbox_select2"></div>
+	                                  我已阅读并同意
+               </label>
             </div>
+            <a class="userneedtokonw left">《用户注册协议》</a>
+         </div>
             <div class="clicktoregdiv">
                 <btn class="clicktoreg">立即注册</btn>
             </div>
@@ -132,8 +154,23 @@
 </div>
 <div class="footer">
     <div class="comaneyinfos">
-        2017紧商科技股份有限公司 浙ICP备16009097号，增值电信业务经营许可证：浙B2-20160606  <a class="footlink">联系我们</a><a class="footlink">网站地图</a>
+        2017紧商科技股份有限公司 浙ICP备16009097号，增值电信业务经营许可证：浙B2-20160606 
     </div>
 </div>
+<script type="text/javascript">
+	//单选点击
+$(".labelli").click(function(){
+	var ele = $(this).children().children(".radio_select");
+	 $(this).children().children(".radio_select").addClass("radio_select2");
+	 $(this).siblings().children().children(".radio_select").removeClass("radio_select2")
+})
+$(".agreeline").click(function(){
+	if( $(this).children().children().hasClass("checkbox_select2")){
+		 $(this).children().children(".checkbox_select").removeClass("checkbox_select2");
+	}else{
+		$(this).children().children(".checkbox_select").addClass("checkbox_select2")
+	}
+})
+</script>
 </body>
 </html>
