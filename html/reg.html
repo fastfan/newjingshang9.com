@@ -11,7 +11,7 @@
 <div class="loginline">
     <div class="container">
         <div class="loginleft">
-			<a href="" class="wellcome">您好，欢迎来到紧商网！</a>
+			<a href="../index_unlogin.html" class="wellcome">您好，欢迎来到紧商网！</a>
 			<a href="login.html" class="login_a login_b" id="clicktolog">请登录</a>
 			<a href="reg.html" class="login_a login_b" id="clicktoreg">请注册</a>
 			<a href="" class="login_a zanshiyingcao" id="username">15922884455</a>
@@ -170,6 +170,9 @@ $(".agreeline").click(function(){
 	}else{
 		$(this).children().children(".checkbox_select").addClass("checkbox_select2")
 	}
+})
+$(".clicktoreg").click(function(){
+	window.open("login.html","_self");
 })
 </script>
 </body>

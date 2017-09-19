@@ -485,7 +485,7 @@ li.rulesbody:last-child {
     background: #fff;
     right: 0;
     padding: 20px;
-    margin-top: -295px;
+    margin-top: -300px;
     text-align: center;
 }
 
@@ -570,4 +570,16 @@ li.rulesbody:last-child {
     float: right;
     width: 295px;
     background-color: #fff;
+}
+.goodsSail_login,.goodsSail_reg{
+	width: 75px;
+	line-height: 30px;
+	padding:0 !important;
+	font-size: 14px;
+}
+.goodsSail_login{
+	background-color: #E60012 !important;
+	color: #fff;
+	font-size: 14px;
+	border: 1px solid #E60012 !important;
 }

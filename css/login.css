@@ -99,13 +99,14 @@ a.loginsoon {
     text-align: center;
     font-size: 18px;
     color: #fff;
-    background: #ff0036;
+    background: #e60012;
     padding: 8px 0;
     margin-bottom: 10px;
 }
 .loginbtn{
     overflow: hidden;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .logininput {
@@ -261,13 +262,6 @@ li.writedwrong {
     color: #ee4133;
 }
 
-li.writinglabel::before {
-    content: '*';
-    position: relative;
-    top: 2px;
-    left: -2px;
-    color: #ee4133;
-}
 
 .tabuser h3 {
     text-align: center;
@@ -293,6 +287,7 @@ li.writinglabel::before {
     font-size: 14px;
     padding: 10px 0;
     display: inline-block;
+    cursor: pointer;
 }
 
 .clicktoregdiv {

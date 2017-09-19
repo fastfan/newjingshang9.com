@@ -15,25 +15,32 @@
 	float: left;
 	border: 1px solid #ccc;
 	display: inline;
-	padding: 3px 10px 3px 10px;
+	/*padding: 3px 10px 3px 10px;*/
 	margin-right: 5px;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
+	width: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
 	cursor: pointer;
 	background: #fff;
 	text-decoration:none;
-	color:#999;
+	color:#666;
+	font-size: 12px;
 }
 
 #kkpager span.disabled{
 	float: left;
 	display: inline;
-	padding: 3px 10px 3px 10px;
+	/*padding: 3px 10px 3px 10px;*/
 	margin-right: 5px;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	width: 32px;
+    line-height: 32px;
+    text-align: center;
 	border:1px solid #DFDFDF;
 	background-color:#e6e6e6;
 	color:#aaa;
@@ -42,11 +49,14 @@
 	float: left;
 	border: 1px solid #ff0036;
 	display: inline;
-	padding: 3px 10px 3px 10px;
+	/*padding: 3px 10px 3px 10px;*/
 	margin-right: 5px;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
 	background: #ff0036;
 	color: #fff;
 }
@@ -110,6 +120,7 @@
 #kkpager .spanDot{
 	float:left;
 	margin-right:5px;
+	margin-top: 5px;
 }
 
 #kkpager .currPageNum{
@@ -125,13 +136,31 @@
 	content: "<";
 	margin-right: 5px;
 }
-#kkpager .pageBtnWrap>span:nth-child(2){
-	padding: 3px 10px 3px 6px;
+#kkpager .pageBtnWrap>span:nth-child(1){
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
 }
-#kkpager.pageBtnWrap>a:nth-last-child(2){
-	padding: 3px 4px 3px 10px;
+#kkpager .pageBtnWrap>span.disabled:nth-child(2){
+	width: 64px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+#kkpager .pageBtnWrap>span.disabled:nth-child(1){
+	padding: 0 10px !important;
+}
+/*#kkpager .pageBtnWrap>span:nth-child(2){
+	padding: 3px 10px 3px 6px;
+}*/
+#kkpager .pageBtnWrap>a:nth-last-child(2){
+	width: 62px !important;
 }
 .pageBtnWrap>a:nth-last-child(2)::after{
 	content: ">";
 	margin-left: 5px;
+}
+#kkpager .pageBtnWrap>a:last-child{
+	padding: 0 10px !important;
 }
