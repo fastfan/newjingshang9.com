@@ -325,6 +325,7 @@ span.goodsprice {
 .midnavli {
     width: 116px;
     padding: 10px 5px 10px 15px;
+    font-size: 14px;
 }
 
 .logoshowbox {
@@ -373,8 +374,10 @@ span.goodsprice {
     text-align: center;
     height: 35px;
 }
-
-.goodstalbe tr:hover>td {
+.goodstalbe tr:not(:last-child):hover>td{
+    color: #e60012;
+}
+.goodstalbe tr.lastline:hover>td:not(:first-child){
     color: #e60012;
 }
 

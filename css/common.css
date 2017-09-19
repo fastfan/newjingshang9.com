@@ -804,7 +804,7 @@ a.anymore.hereshow::after {
 .linkbox{
     overflow: hidden;
     padding:10px 0;
-    border-top:1px solid #bfbfbf;
+    border-top:1px solid #eee;
     color: #333;
 }
 
